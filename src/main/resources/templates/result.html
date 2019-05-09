@@ -1,0 +1,16 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Delivery Result</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+<h1>Result</h1>
+<p th:text="'Pickup Postcode: ' + ${pickupPostcode}" />
+<p th:text="'Delivery Postcode: ' + ${deliveryPostcode}" />
+<p th:text="'Vehicle: ' + ${vehicle}" />
+<p th:text="'Delivery Price: ' + ${price}" />
+<a href="/quote">Submit another delivery</a>
+</body>
+</html>

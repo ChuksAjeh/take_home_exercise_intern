@@ -1,0 +1,18 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Delivery: Enter Details</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+<h1>Form</h1>
+<form action="#" th:action="@{/quote}" th:object="${quote}" method="post">
+    <p>Pickup Postcode: <input type="text" th:field="*{pickupPostcode}" /></p>
+    <p>Delivery Postcode: <input type="text" th:field="*{deliveryPostcode}" /></p>
+    <p>vehicle: <input type="text" th:field="*{vehicle}" /></p>
+    <p><input type="submit" value="Submit" /></p>
+</form>
+
+</body>
+</html>
